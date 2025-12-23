@@ -15,9 +15,9 @@ public class Question1 {
 		floatNum = 9.5f;
 		double doubleNum = 0.0;
 		doubleNum = 10.5;
-		char letter = 'R';
+		char letter = '\u0000';
 		letter = 'a';
-		String letters = "null";
+		String letters = null;
 		letters = "ハロー";
 		boolean isBoolean =  false;
 		isBoolean = true;
