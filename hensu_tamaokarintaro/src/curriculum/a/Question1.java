@@ -19,7 +19,7 @@ public class Question1 {
 		letter = 'a';
 		String letters = null;
 		letters = "ハロー";
-		boolean isBoolean =  false;
+		boolean isBoolean = false;
 		isBoolean = true;
 		System.out.println(byteNum + shortNum + intNum);
 		System.out.println(floatNum + doubleNum);
@@ -28,40 +28,40 @@ public class Question1 {
 		System.out.println(byteNum * shortNum * intNum * longNum);
 		System.out.println(doubleNum / shortNum);
 		System.out.println(byteNum - shortNum);
-		
+
 		String name = "山田太郎";
 		System.out.println("こんにちは、" + name + "さん！");
-		
+
 		int age;
 		age = 25;
 		System.out.println("年齢：" + age + "歳");
-		
+
 		int num1;
 		num1 = 10;
 		int num2;
 		num2 = 5;
 		System.out.println(num1 + num2);
-		
+
 		int score;
 		score = 80;
 		score += 20;
 		System.out.println("最終スコア：" + score);
-		
+
 		double price;
 		price = 99.99;
-		int iprice = (int)price;
+		int iprice = (int) price;
 		System.out.println("整数価格：" + iprice);
-		
+
 		String numStr;
 		numStr = "123";
-		int inumStr = Integer.parseInt(numStr);	
-		System.out.println("変換後の値" + (inumStr +10));
-		
+		int inumStr = Integer.parseInt(numStr);
+		System.out.println("変換後の値" + (inumStr + 10));
+
 		int num;
 		num = 50;
 		String Snum = String.valueOf(num);
 		System.out.println("得点：" + Snum + "点");
-		
+
 		int a;
 		a = 10;
 		int b;
@@ -69,20 +69,17 @@ public class Question1 {
 		boolean result;
 		result = (a < b) ? true : false;
 		System.out.println(result);
-		
+
 		int x;
 		x = 15;
 		String Sresult = (x >= 10) ? "OK" : "NG";
 		System.out.println(Sresult);
-		
+
 		String text;
 		text = "私はJavaが好きです。Javaは楽しい！";
 		text = text.replace("Java", "Python");
 		System.out.println(text);
-		
-		
-		
-	}
 
+	}
 
 }
