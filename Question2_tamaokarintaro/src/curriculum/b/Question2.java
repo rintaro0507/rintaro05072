@@ -20,7 +20,7 @@ public class Question2 {
 		int iage = 18;
 		if (iage >= 20) {
 			System.out.println("成人です");
-		} else if (iage <= 13 && iage >= 19) {
+		} else if (iage >= 13 && iage <= 19) {
 			System.out.println("ティーンエイジャーです");
 		} else if (12 >= iage) {
 			System.out.println("子供です");
@@ -54,8 +54,9 @@ public class Question2 {
 		}
 
 		int iscore;
-		System.out.println("0～100のいずれかを入力");
+		System.out.print("0～100のいずれかを入力");
 		iscore = sc.nextInt();
+		String newline = sc.nextLine();
 		if (90 <= iscore) {
 			System.out.println("優");
 		} else if (70 <= iscore) {

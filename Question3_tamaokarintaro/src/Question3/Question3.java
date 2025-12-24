@@ -69,7 +69,7 @@ public class Question3 {
 
 		for (int k = 1; k <= 9; k++) {
 			for (int j = 1; j <= 9; j++) {
-				System.out.print(k + "×" + j + "=" + (k * j) + " ");
+				System.out.printf("%d×%d=%2d", k, j, k * j);
 			}
 			System.out.println();
 		}
