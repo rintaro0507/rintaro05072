@@ -32,47 +32,52 @@ public class Question2 {
 		int max = Math.max(x, Math.max(y, z));
 		System.out.println(max);
 
-		int num;
+		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("数値を入力：");
-		num = sc.nextInt();
-		if (num > 0) {
-			System.out.println("正の数です");
-		} else if (num == 0) {
-			System.out.println("0です");
-		} else if (num < 0) {
-			System.out.println("負の数です");
-		}
 
-		int value;
-		System.out.println("数値を入力：");
-		value = sc.nextInt();
-		if (value % 2 == 0) {
-			System.out.println("偶数です");
-		} else {
-			System.out.println("奇数です");
-		}
+        System.out.println("数値を入力：");
+        String input = sc.nextLine();          // nextLineで入力
+        int num = Integer.parseInt(input);     // int型に変換
 
-		int iscore;
-		System.out.print("0～100のいずれかを入力");
-		iscore = sc.nextInt();
-		String newline = sc.nextLine();
-		if (90 <= iscore) {
-			System.out.println("優");
-		} else if (70 <= iscore) {
-			System.out.println("良");
-		} else if (50 <= iscore) {
-			System.out.println("可");
-		} else {
-			System.out.println("不可");
-		}
+        if (num > 0) {
+            System.out.println("正の数です");
+        } else if (num == 0) {
+            System.out.println("0です");
+        } else {
+            System.out.println("負の数です");
+        }
 
-		String input;
+
+        System.out.println("数値を入力：");
+        String finput = sc.nextLine();          // nextLineで入力
+        int value = Integer.parseInt(finput);   // intに変換
+
+        if (value % 2 == 0) {
+            System.out.println("偶数です");
+        } else {
+            System.out.println("奇数です");
+        }
+
+		System.out.print("0〜100の点数を入力してください：");
+        String iinput = sc.nextLine();          // nextLineで入力
+        int iscore = Integer.parseInt(iinput);   // int型に変換
+
+        if (iscore >= 90) {
+            System.out.println("優");
+        } else if (iscore >= 70) {
+            System.out.println("良");
+        } else if (iscore >= 50) {
+            System.out.println("可");
+        } else {
+            System.out.println("不可");
+        }
+
+		String uinput;
 		System.out.println("文字を打たないで:");
-		input = sc.nextLine();
-		if (input == null) {
+		uinput = sc.nextLine();
+		if (uinput == null) {
 			System.out.println("入力が無効です");
-		} else if (input.isEmpty()) {
+		} else if (uinput.isEmpty()) {
 			System.out.println("入力が無効です");
 		}
 

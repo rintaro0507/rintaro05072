@@ -2,7 +2,7 @@ package Question4;
 
 import java.util.Scanner;
 
-public class question4 {
+public class Question4 {
 
 	public static void main(String[] args) {
 		int[] numbers = { 1, 2, 3, 4, 5 };
@@ -47,20 +47,20 @@ public class question4 {
 		int[] num2 = { 4, 7, 10, 15, 20 };
 		Scanner sc = new Scanner(System.in);
 		System.out.print("数値を入力：");
-		String str = sc.nextLine();
-		int strw = Integer.parseInt(str);
+		int inputValue = Integer.parseInt(sc.nextLine());
 		boolean found = false;
 		for (int v2 : num2) {
-			if (v2 == strw) {
+			if (v2 == inputValue) {
 				found = true;
 				break;
 			}
 		}
 		if (found) {
-			System.out.println(strw + "は配列に含まれています");
+			System.out.println(inputValue + "は配列に含まれています");
 		} else {
-			System.out.println(strw + "は配列に含まれていません");
+			System.out.println(inputValue + "は配列に含まれていません");
 		}
+		sc.close();
 
 		int[][] num3 = {
 				{ 1, 2 },
@@ -95,8 +95,8 @@ public class question4 {
 		};
 		int max2 = num5[0][0];
 		int min2 = num5[0][0];
-		for (int q = 1; q < num5.length; q++) {
-			for (int w = 1; w < num5[q].length; w++) {
+		for (int q = 0; q < num5.length; q++) {
+			for (int w = 0; w < num5[q].length; w++) {
 				if (num5[q][w] > max2) {
 					max2 = num5[q][w];
 				}
