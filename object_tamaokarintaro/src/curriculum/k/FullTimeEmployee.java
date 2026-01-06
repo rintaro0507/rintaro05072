@@ -8,7 +8,7 @@ public class FullTimeEmployee extends Employee {
         super(name, hours);
     }
 
-    @Override
+    
     public int calculateSalary() {
         return hours * HOURLY_RATE;
     }
