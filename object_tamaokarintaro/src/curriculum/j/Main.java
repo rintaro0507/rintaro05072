@@ -12,9 +12,9 @@ public class Main {
 		List<Billable> list = new ArrayList<>();
 
 	
-		list.add(new FullTimeEmployee("", ""));
-		list.add(new ContractEmployee("", ""));
-		list.add(new FullTimeEmployee("", ""));
+		list.add(new FullTimeEmployee("1", "佐藤"));
+		list.add(new ContractEmployee("2", "山田"));
+		list.add(new FullTimeEmployee("3", "川西"));
 
 		int hoursWorked = 9;
 

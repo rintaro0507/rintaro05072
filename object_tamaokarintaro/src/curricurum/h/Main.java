@@ -3,8 +3,8 @@ package curricurum.h;
 public class Main {
 
 	public static void main(String[] args) {
-		FullTimeEmployee fullTime = new FullTimeEmployee("", "");
-		PartTimeEmployee partTime = new PartTimeEmployee("", "");
+		FullTimeEmployee fullTime = new FullTimeEmployee("1", "山田");
+		PartTimeEmployee partTime = new PartTimeEmployee("2", "佐藤");
 
 		int hours = 9;
 
