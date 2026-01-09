@@ -7,11 +7,11 @@ public class Main {
 		Enemy enemy = new Enemy();
 
 		while (true) {
-			int playhand = player.gethand();
-			int enemyhand = enemy.gethand();
+			int playhand = player.getHand();
+			int enemyhand = enemy.getHand();
 
-			System.out.println("あなたの手" + hdtoSt(playhand));
-			System.out.println("CPUの手" + hdtoSt(enemyhand));
+			System.out.println("あなたの手" + handToString(playhand));
+			System.out.println("CPUの手" + handToString(enemyhand));
 
 			if ((playhand == 0 && enemyhand == 1) ||
 					(playhand == 1 && enemyhand == 2) ||
@@ -28,10 +28,11 @@ public class Main {
 			System.out.println();
 
 		}
+		player.close();
 
 	}
 
-	private static String hdtoSt(int hand) {
+	private static String handToString(int hand) {
 		switch (hand) {
 		case 0:
 			return "グー";

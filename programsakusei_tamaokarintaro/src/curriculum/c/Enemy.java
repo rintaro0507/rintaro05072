@@ -4,9 +4,9 @@ import java.util.Random;
 
 public class Enemy {
 
-	private java.util.Random rand = new Random();
-	
-	public int gethand() {
+	Random rand = new Random();
+
+	public int getHand() {
 		return rand.nextInt(3);
 	}
 
