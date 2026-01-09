@@ -1,6 +1,6 @@
 package jikosyoukai;
 
-class Person {
+public class Person {
 
 	String name;
 	int age;
